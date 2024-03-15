@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\WilayahController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/tes', [TestController::class, 'index']);
+Route::get('/kecamatan', [WilayahController::class, 'kecamatan']);
+Route::get('/kelurahan', [WilayahController::class, 'kelurahan']);
